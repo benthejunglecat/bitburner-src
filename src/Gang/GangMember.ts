@@ -87,7 +87,7 @@ export class GangMember {
   }
 
   calculatePower(): number {
-    return (this.hack + this.str + this.def + this.dex + this.agi + this.cha) / 95;
+    return calculatePowerGain(this)
   }
 
   assignToTask(taskName: string): boolean {
