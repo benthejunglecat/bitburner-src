@@ -12,6 +12,10 @@ export function calculateWantedPenalty(gang: FormulaGang): number {
   return gang.respect / (gang.respect + gang.wantedLevel);
 }
 
+export function calculatePowerGain(member : GangMember){
+    return (member.str + member.agi + member.dex + member.def + member.cha) / 95
+}
+
 export function calculateRespectGain(gang: FormulaGang, member: GangMember, task: GangMemberTask): number {
   if (task.baseRespect === 0) return 0;
   let statWeight =
