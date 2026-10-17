@@ -14,6 +14,7 @@ import {
   calculateWantedLevelGain,
   calculateAscensionMult,
   calculateAscensionPointsGain,
+  calculatePowerGain,
 } from "./formulas/formulas";
 import { GangMemberExpGain } from "@nsdefs";
 import { convertV2GangEquipmentNames } from "../utils/APIBreaks/3.0.0";
