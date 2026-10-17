@@ -358,6 +358,11 @@ export function NetscriptFormulas(): InternalAPI<IFormulas> {
         checkFormulasAccess(ctx);
         return calculateMoneyGain(gang, member, task);
       },
+      powerGain(ctx, _member) => {
+        const member = helpers.gangmember(ctx, _member);
+        checkFormulasAccess(ctx);
+        return calculatePowerGain(
+      },
       ascensionPointsGain: (ctx, _exp) => {
         const exp = helpers.number(ctx, "exp", _exp);
         checkFormulasAccess(ctx);
