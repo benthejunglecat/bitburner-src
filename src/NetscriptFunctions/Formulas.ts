@@ -7,7 +7,6 @@ import {
   calculateRamUpgradeCost,
   calculateCoreUpgradeCost,
   calculateNodeCost,
-  calculatePowerGain,
 } from "../Hacknet/formulas/HacknetNodes";
 import {
   calculateHashGainRate as HScalculateHashGainRate,
@@ -36,6 +35,7 @@ import {
   calculateWantedPenalty,
   calculateAscensionMult,
   calculateAscensionPointsGain,
+  calculatePowerGain,
 } from "../Gang/formulas/formulas";
 import { favorToRep as calculateFavorToRep, repToFavor as calculateRepToFavor } from "../Faction/formulas/favor";
 import { repFromDonation, donationForRep } from "../Faction/formulas/donation";
