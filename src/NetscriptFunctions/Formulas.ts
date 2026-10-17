@@ -7,6 +7,7 @@ import {
   calculateRamUpgradeCost,
   calculateCoreUpgradeCost,
   calculateNodeCost,
+  calculatePowerGain,
 } from "../Hacknet/formulas/HacknetNodes";
 import {
   calculateHashGainRate as HScalculateHashGainRate,
